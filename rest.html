@@ -9,53 +9,45 @@
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.0.0/dist/tailwind.min.css" rel="stylesheet" />
   </head>
   <body class="min-h-screen bg-gray-50 bg-[url('/wave.svg')] bg-fixed bg-bottom bg-no-repeat ">
-    <div class="flex justify-between items-center p-6">
-      <a href="#" class="flex items-center gap-2">
+    <header class="flex justify-between items-center p-6">
+      <a href="/rest.html" class="flex items-center gap-2">
         <svg class="h-10 text-green-600" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
           <path fill-rule="evenodd" d="M12.516 2.17a.75.75 0 0 0-1.032 0 11.209 11.209 0 0 1-7.877 3.08.75.75 0 0 0-.722.515A12.74 12.74 0 0 0 2.25 9.75c0 5.942 4.064 10.933 9.563 12.348a.749.749 0 0 0 .374 0c5.499-1.415 9.563-6.406 9.563-12.348 0-1.39-.223-2.73-.635-3.985a.75.75 0 0 0-.722-.516l-.143.001c-2.996 0-5.717-1.17-7.734-3.08Zm3.094 8.016a.75.75 0 1 0-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 0 0-1.06 1.06l2.25 2.25a.75.75 0 0 0 1.14-.094l3.75-5.25Z" clip-rule="evenodd"/>
         </svg>
         <span class="text-xl font-black">Security</span>
       </a>
-      <div>
-        <a href="#" class="rounded-md bg-green-600 py-2 px-4 text-white font-semibold shadow-lg hover:shadow-xl focus:shadow-xl hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2 transition duration-150 ease-in-out">Sign In</a>
+      <div class="flex gap-3">
+        <a href="login.html" class="rounded-md bg-gray-200 py-2 px-4 font-semibold text-gray-900 shadow-lg transition duration-150 ease-in-out hover:bg-gray-300 hover:shadow-xl focus:shadow-xl focus:outline-none focus:ring-2 focus:ring-gray-300 focus:ring-offset-2">Sign In
+        </a>
+        <a href="verfiy-email.html"  class="border-none	 rounded-md bg-green-600 py-2 px-4 font-semibold text-white shadow-lg transition duration-150 ease-in-out hover:bg-green-700 hover:shadow-xl focus:shadow-xl focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2">Sign Up
+        </a>
       </div>
-    </div>
-    <div class="flex flex-col justify-center p-6 pb-12">
+    </header>
+    <main class="flex flex-col justify-center p-6 pb-12">
       <div class="mx-auto max-w-md text-center">
-        <svg class="h-12 mx-auto text-green-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M17.982 18.725A7.488 7.488 0 0 0 12 15.75a7.488 7.488 0 0 0-5.982 2.975m11.963 0a9 9 0 1 0-11.963 0m11.963 0A8.966 8.966 0 0 1 12 21a8.966 8.966 0 0 1-5.982-2.275M15 9.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"/>
+        <svg class="h-12 mx-auto text-green-600"  xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M16.5 10.5V6.75a4.5 4.5 0 1 0-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 0 0 2.25-2.25v-6.75a2.25 2.25 0 0 0-2.25-2.25H6.75a2.25 2.25 0 0 0-2.25 2.25v6.75a2.25 2.25 0 0 0 2.25 2.25Z" />
         </svg>
-        <h2 class="mt-2 sm:mt-6 text-2xl sm:text-3xl font-bold text-gray-900">Create your account</h2>
+        <h2 class="mt-2 sm:mt-6 text-2xl sm:text-3xl font-bold text-gray-900">Resetpassword</h2>
       </div>
       <div class="mx-auto mt-6 sm:mt-10 w-full max-w-md rounded-xl bg-white p-6 shadow-xl backdrop-blur-xl sm:mt-10 sm:p-10">
         <form action="#" autocomplete="off" class="space-y-6">
           <div class="mb-6">
-            <label for="name" class="block text-sm font-medium text-gray-700">Name</label>
-            <div class="relative mt-1">
-              <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
-                <svg class="h-5 w-5 text-gray-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z"/>
-                </svg>                
-              </div>
-              <input type="text" id="name" name="name" required class=" border border-slate-950 rounded-md focus:border-green-500 focus:ring-green-500 pl-10 h-10 w-full text-sm" placeholder="John Doe">
-            </div>
-          </div>
-          <div class="mb-6">
             <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
             <div class="relative mt-1">
               <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
-                <svg  class="h-5 w-5 text-red-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" >
+                <svg  class="h-5 w-5 text-gray-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" >
                   <path  stroke-linecap="round" stroke-linejoin="round" d="M21.75 9v.906a2.25 2.25 0 0 1-1.183 1.981l-6.478 3.488M2.25 9v.906a2.25 2.25 0 0 0 1.183 1.981l6.478 3.488m8.839 2.51-4.66-2.51m0 0-1.023-.55a2.25 2.25 0 0 0-2.134 0l-1.022.55m0 0-4.661 2.51m16.5 1.615a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V8.844a2.25 2.25 0 0 1 1.183-1.981l7.5-4.039a2.25 2.25 0 0 1 2.134 0l7.5 4.039a2.25 2.25 0 0 1 1.183 1.98V19.5Z" />
                 </svg>                                                                          
               </div>
-              <input type="text" id="name" name="name" class="rounded-md border pr-10 text-red-900 placeholder-red-300 border-red-300 pl-10 h-10 w-full text-sm focus:border-red-500 focus:ring-red-500 " placeholder="John Doe">
-              <div class="absolute inset-y-0 right-0 flex items-center p-3">
+              <input type="text" id="name" name="name" class="rounded-md border pr-10 text-red-900 placeholder-gray-300 border-gray-300 pl-10 h-10 w-full text-sm focus:border-red-500 focus:ring-red-500 " placeholder="John Doe">
+              <!-- <div class="absolute inset-y-0 right-0 flex items-center p-3">
                 <svg class=" h-5 w-5 text-red-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" >
                   <path fill-rule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12ZM12 8.25a.75.75 0 0 1 .75.75v3.75a.75.75 0 0 1-1.5 0V9a.75.75 0 0 1 .75-.75Zm0 8.25a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Z" clip-rule="evenodd" />
                 </svg>                
-              </div>
+              </div> -->
             </div>
-            <p class="mt-2 text-sm sm:text-xs text-red-600">Your email must be valid email adders</p>
+            <!-- <p class="mt-2 text-sm sm:text-xs text-red-600">Your email must be valid email adders</p> -->
           </div>
           <div class="mb-6">
             <label for="password" class="block text-sm font-medium text-gray-700">Password</label>
@@ -78,16 +70,13 @@
               </div>
               <input type="text" id="name" name="name" required class="border border-slate-950 rounded-md focus:border-green-500 focus:ring-green-500 pl-10 h-10 w-full text-sm" placeholder="John Doe">
             </div>
-          </div> 
+          </div>
           <div>
-            <a href="#" class="flex justify-center items-center rounded-md bg-green-600 py-2 px-4 text-white font-semibold shadow-lg hover:shadow-xl focus:shadow-xl hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2 transition duration-150 ease-in-out">Sign Up </a> 
+            <a href="login.html" class="flex justify-center items-center rounded-md bg-green-600 py-2 px-4 text-white font-semibold shadow-lg hover:shadow-xl focus:shadow-xl hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2 transition duration-150 ease-in-out">Reset password</a> 
           </div>
         </form>
-        <div class="flex justify-center items-center mt-6 ">
-          <a href="#" class="font-medium text-sm text-green-600 hover:text-green-500 ">Already have an account?</a>
-        </div>
       </div>
-    </div>
+    </main>
     <script src="./sprik.js"></script>
   </body>
 </html>
